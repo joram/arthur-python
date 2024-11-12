@@ -1,18 +1,14 @@
-a = "arthur" # string
-b = 123    # integer
-c = "123"  # string
-d = 123.0  # float
-e = ["arthur", "john", "ruby", "caitlin"]   # list
-
-
-
 
 def return_list_of_numbers_inbetween(a, b):
-    my_list = []
-    my_list = ["arthur", "john", "ruby", "caitlin"]
-
-
-    return my_list
+    aol = []
+    keep_going = True
+    current_number = a
+    while keep_going:
+        aol.append(current_number)
+        current_number += 1
+        if current_number == b + 1:
+            keep_going = False
+    return aol
 
 n1 = input("give me a number")
 n1 = int(n1)
